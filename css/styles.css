@@ -473,8 +473,8 @@ section {
 /* ? CUSTOMERS SECTION */
 
 .customers-link {
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--animation-hover-focus-fast),
+    color var(--animation-hover-focus-fast);
 
   display: flex;
   align-items: center;
@@ -858,7 +858,7 @@ section {
   transition: transform var(--animation-hover-focus-fast);
 }
 .modal {
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--animation-hover-focus-fast);
 
   position: absolute;
   top: calc(50%);
@@ -874,9 +874,9 @@ section {
 }
 
 .modal-close-btn {
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--animation-hover-focus-fast);
+  transition: background-color var(--animation-hover-focus-fast),
+    border var(--animation-hover-focus-fast);
 
   position: absolute;
   top: 24px;
