@@ -140,7 +140,7 @@ section {
   justify-content: space-between;
 }
 
-.header {
+.page-header {
   border-bottom: 1px solid var(--border-portfolio);
 }
 /* ? LOGO */
