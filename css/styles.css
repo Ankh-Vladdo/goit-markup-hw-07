@@ -97,17 +97,44 @@ p {
 }
 /* *Загальні умови для всіх контейнерів */
 
+/*! Base style */
 .container {
-  max-width: 1158px;
+  min-width: 320px;
+  max-width: 428px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+
+@media screen and (min-width: 768px){
+  .container{
+    max-width: 768px;
+
+  }
 }
+
+@media screen and (min-width: 1158px){
+  .container{
+    max-width: 1158px;
+
+  }
+}
+
+section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media screen and (min-width: 1158px)  {
+  section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+  }
+}
+
+
 /* *Приховані заголовки */
 
 .visually-hidden {
@@ -317,9 +344,7 @@ section {
   min-height: 112px;
   background-color: var(--tertiary-bg);
   border-radius: 4px;
-}
 
-.about-icon-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -332,7 +357,7 @@ section {
 }
 
 .about-item {
-  width: 264px;
+  max-width: 264px;
   margin-right: 24px;
 }
 
