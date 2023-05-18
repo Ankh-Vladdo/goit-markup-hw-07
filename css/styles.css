@@ -96,49 +96,8 @@ img {
 p {
   display: block;
 }
-/* *General conditions for all containers */
-
-/*! Base style */
-.container {
-  min-width: 320px;
-  max-width: 428px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-section {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
-
-/* ! Styles for Tablet */
-@media screen and (min-width: 768px){
-  .container{
-    max-width: 768px;
-
-  }
-}
-/* ! Styles for Desktop */
-@media screen and (min-width: 1158px){
-  .container{
-    max-width: 1158px;
-
-  }
-}
-
-@media screen and (min-width: 1158px)  {
-  section{
-    padding-top: 120px;
-    padding-bottom: 120px;
-
-  }
-}
-
 
 /* *Hidden titles  */
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -159,6 +118,46 @@ section {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+/* *General conditions for all containers */
+
+/*! Base style */
+.container {
+  min-width: 320px;
+  max-width: 428px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+/* !Tablet screen >= 768 */
+@media only screen and (min-width: 768px) {
+  .container{
+    max-width: 768px;
+
+  }
+}
+/* ! Desktop screen >= 1158 */
+@media only screen and (min-width: 1158px) {
+  .container{
+    max-width: 1158px;
+
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+  }
 }
 
 /*? HEADER SECTION  */
@@ -308,6 +307,7 @@ section {
 }
 
 /* *OPEN MODAL BUTTON */
+
 .button {
   border: none;
   cursor: pointer;
