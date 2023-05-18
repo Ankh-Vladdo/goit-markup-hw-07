@@ -60,10 +60,13 @@
   --tablet: calc(100% / 2 - 2 * 15px);
   --desktop: calc(100% / 4 - 2 * 15px);
 
- /** Indent */
+  /** Indent */
   --indent-vertical: 24px;
   --indent-horizontal: 72px;
 
+  --items-one: 1;
+  --items-two: 2;
+  --items-three: 3;
 }
 
 /* *Reset styles */
@@ -131,7 +134,6 @@ p {
   max-width: 428px;
   padding: 0 16px;
   margin: 0 auto;
-
 }
 
 section {
@@ -141,26 +143,23 @@ section {
 
 /* !Tablet screen >= 768 */
 @media only screen and (min-width: 768px) {
-  .container{
+  .container {
     max-width: 768px;
-
   }
 }
 /* ! Desktop screen >= 1158 */
 @media only screen and (min-width: 1158px) {
-  .container{
+  .container {
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
-
   }
 }
 
 @media only screen and (min-width: 1158px) {
-  section{
+  section {
     padding-top: 120px;
     padding-bottom: 120px;
-
   }
 }
 
@@ -426,26 +425,22 @@ section {
 }
 
 .team-list {
+  max-width: 264px;
   display: flex;
   flex-wrap: wrap;
   column-gap: var(--indent-vertical);
   row-gap: var(--indent-horizontal);
-
 }
 
 .team-item {
-  max-width: 264px;
+  flex-basis: calc(
+    (100% - var(--indent-vertical) * (var(--items-one) - 1)) / var (--items-one)
+  );
 
   background-color: var(--primary-bg);
   border-radius: 0px 0px 4px 4px;
   box-shadow: var(--team-item-box-shadow);
 }
-
-@media only screen and (min-width: 1158px) {
-  .team-list {
-    gap: var(--indent-vertical);
-  }
-  }
 
 .card-content {
   padding-top: 32px;
@@ -466,6 +461,7 @@ section {
 
 .profession-text {
   margin-bottom: 8px;
+
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -484,13 +480,14 @@ section {
 
 .team-socials-link {
   transition: background-color var(--animation-hover-focus-fast);
+  width: 40px;
+  height: 40px;
 
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+
   background-color: var(--social-icons-bg);
   color: var(--social-icons);
 }
