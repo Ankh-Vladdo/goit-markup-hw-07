@@ -56,13 +56,14 @@
   --animation-hover-focus-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   /* *Calc for size of cards */
-
+  --mobile: calc(100% / 1 - 2 * 15px);
   --tablet: calc(100% / 2 - 2 * 15px);
   --desktop: calc(100% / 4 - 2 * 15px);
 
+
 }
 
-/* *Скидання стилів */
+/* *Reset styles */
 h1,
 h2,
 h3,
@@ -95,7 +96,7 @@ img {
 p {
   display: block;
 }
-/* *Загальні умови для всіх контейнерів */
+/* *General conditions for all containers */
 
 /*! Base style */
 .container {
@@ -107,23 +108,24 @@ p {
   margin-right: auto;
 }
 
+section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+/* ! Styles for Tablet */
 @media screen and (min-width: 768px){
   .container{
     max-width: 768px;
 
   }
 }
-
+/* ! Styles for Desktop */
 @media screen and (min-width: 1158px){
   .container{
     max-width: 1158px;
 
   }
-}
-
-section {
-  padding-top: 96px;
-  padding-bottom: 96px;
 }
 
 @media screen and (min-width: 1158px)  {
@@ -135,7 +137,7 @@ section {
 }
 
 
-/* *Приховані заголовки */
+/* *Hidden titles  */
 
 .visually-hidden {
   position: absolute;
