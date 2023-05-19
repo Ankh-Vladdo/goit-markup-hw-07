@@ -442,6 +442,10 @@ section {
   box-shadow: var(--team-item-box-shadow);
 }
 
+/* flex-basis: calc(
+    (100% - var(--indent-vertical) * (var(--items-one) - 1)) / var (--items-one)
+  ); */
+
 .card-content {
   padding-top: 32px;
   padding-bottom: 32px;
