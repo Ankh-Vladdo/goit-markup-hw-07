@@ -608,12 +608,11 @@ section {
 
 .customers-container {
   width: 396px;
-}
+  padding: 0;
 
 @media only screen and (min-width: 768px) {
   .customers-container {
     width: 552px;
-    padding: 0;
   }
 }
 
@@ -642,18 +641,16 @@ section {
   gap: 72px 16px;
 }
 
-@media only screen and (min-width: 768px) and (min-width: 1158px) {
+@media only screen and (min-width: 768px) {
   .customers-list {
     gap: 72px 24px;
   }
 }
 
-
 .customers-item {
-  flex-basis: calc((100% - var(--indent-ver-customers-mob) * (var(--items-two) - 1)) / var(--items-two));
+  width: 190px;
   height: 88px;
 
-  align-items: center;
   justify-content: center;
 
   background-color: var(--primary-bg);
@@ -661,15 +658,7 @@ section {
 
 @media only screen and (min-width: 768px) {
   .customers-item {
-  width: 168px;
-  }
-}
-
-/* flex-basis: calc((100% - var(--indent-vertical) * (var(--items-three) - 1)) / var (--items-three)); */
-
-@media only screen and (min-width: 1158px) {
-  .customers-item {
-    flex-basis: calc((100% - var(--indent-vertical) * (var(--items-six) - 1)) / var (--items-six));
+    width: 168px;
   }
 }
 
@@ -689,9 +678,15 @@ section {
     color var(--animation-hover-focus-fast);
 }
 
-
 .customer-icon {
   fill: currentColor;
+}
+
+@media only screen and (min-width: 428px) and (max-width: 767px) {
+  .customer-icon {
+  width: 110px;
+  height: 56px;
+}
 }
 
 .customers-link:hover,
