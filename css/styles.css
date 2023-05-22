@@ -55,11 +55,6 @@
   /* *Animation hover-focus */
   --animation-hover-focus-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  /* *Calc for size of cards */
-  --mobile: calc(100% / 1 - 2 * 15px);
-  --tablet: calc(100% / 2 - 2 * 15px);
-  --desktop: calc(100% / 4 - 2 * 15px);
-
   /** Indent */
   --indent-vertical: 24px;
   --indent-horizontal: 72px;
@@ -158,8 +153,6 @@ section {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   section {
@@ -430,17 +423,17 @@ section {
 }
 
 .team-list {
-  max-width: 264px;
   display: flex;
   flex-wrap: wrap;
-  column-gap: var(--indent-vertical);
-  row-gap: var(--indent-horizontal);
+  column-gap: 24px;
+  row-gap: 72px;
 }
 
 .team-item {
-  flex-basis: calc(
-    (100% - var(--indent-vertical) * (var(--items-one) - 1)) / var (--items-one)
-  );
+  flex-basis: calc(100% - (1*72px)/1);
+
+  margin-left: auto;
+  margin-right: auto;
 
   background-color: var(--primary-bg);
   border-radius: 0px 0px 4px 4px;
