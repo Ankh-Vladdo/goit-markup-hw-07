@@ -340,7 +340,6 @@ section {
 }
 
 @media only screen and (min-width: 1158px) {
-
   .hero-title {
     margin-bottom: 48px;
 
@@ -513,7 +512,9 @@ section {
 }
 
 .team-item {
-  flex-basis: calc((100% - var(--indent-vertical) * (var(--items-one) - 1)) / var (--items-one));
+  flex-basis: calc(
+    (100% - var(--indent-vertical) * (var(--items-one) - 1)) / var (--items-one)
+  );
 
   margin-left: auto;
   margin-right: auto;
@@ -523,15 +524,21 @@ section {
   box-shadow: var(--team-item-box-shadow);
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
   .team-item {
-    flex-basis: calc((100% - var(--indent-vertical) * (var(--items-two) - 1)) / var (--items-two));
+    flex-basis: calc(
+      (100% - var(--indent-vertical) * (var(--items-two) - 1)) / var
+        (--items-two)
+    );
   }
 }
 
 @media only screen and (min-width: 1158px) {
   .team-item {
-    flex-basis: calc((100% - var(--indent-vertical) * (var(--items-four) - 1)) / var (--items-four));
+    flex-basis: calc(
+      (100% - var(--indent-vertical) * (var(--items-four) - 1)) / var
+        (--items-four)
+    );
   }
 }
 
@@ -682,9 +689,9 @@ section {
 
 @media only screen and (max-width: 767px) {
   .customer-icon {
-  width: 110px;
-  height: 56px;
-}
+    width: 110px;
+    height: 56px;
+  }
 }
 
 .customers-link:hover,
@@ -1130,7 +1137,7 @@ section {
   border: 1px solid #4d5ae5;
 }
 
-.form-field:focus+.form-icon {
+.form-field:focus + .form-icon {
   fill: #4d5ae5;
 }
 
