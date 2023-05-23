@@ -138,6 +138,10 @@ p {
   margin-left: auto;
   margin-right: auto;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   outline: 2px solid greenyellow;
   outline-offset: -2px;
 }
@@ -605,7 +609,6 @@ section {
 }
 
 /* ? CUSTOMERS SECTION */
-
 .customers-container {
   width: 396px;
   padding: 0;
