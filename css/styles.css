@@ -883,10 +883,10 @@ section {
 }
 
 .footer-sub-input {
-  width: 264px;
+  width: 398px;
   height: 40px;
   padding: 8px 16px;
-  margin-right: 24px;
+  margin-bottom: 16px;
   resize: none;
 
   outline: transparent;
@@ -904,12 +904,20 @@ section {
   letter-spacing: 0.04em;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer-sub-input {
+    width: 264px;
+    margin-right: 24px;
+  }
+}
+
 .footer-sub-input::placeholder {
   color: #ffffff;
 }
 
 .footer-sub-btn {
   min-width: 165px;
+  height: 40px;
   padding: 8px 24px;
 
   display: flex;
@@ -927,6 +935,12 @@ section {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-sub-btn {
+    margin: 0 auto;
+  }
 }
 
 .footer-sub-btn:hover,
