@@ -441,7 +441,7 @@ section {
   border-radius: 4px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 1157px) {
+@media only screen and (max-width: 1157px) {
   .about-icon-box {
     display: none;
   }
@@ -453,7 +453,7 @@ section {
   padding-bottom: 120px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 1157px) {
+@media only screen and (max-width: 1157px) {
   .benefits-section {
     display: none;
   }
@@ -523,19 +523,23 @@ section {
   box-shadow: var(--team-item-box-shadow);
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1157px) {
+@media only screen and (min-width: 768px){
   .team-item {
     flex-basis: calc((100% - var(--indent-vertical) * (var(--items-two) - 1)) / var (--items-two));
-    margin: -0;
   }
 }
 
 @media only screen and (min-width: 1158px) {
   .team-item {
-    flex-basis: calc((100% - var(--indent-vertical) * (var(--items-four) - 1)) / var (--items-four));
+    flex-basis: calc((100% - 120px) / 6);
   }
 }
-calc((100% - 120px) / 6);
+
+
+/* flex-basis: calc((100% - var(--indent-vertical) * (var(--items-four) - 1)) / var (--items-four)); */
+
+
+
 .card-content {
   padding-top: 32px;
   padding-bottom: 32px;
