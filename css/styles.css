@@ -506,6 +506,8 @@ section {
 .team-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+
   column-gap: 24px;
   row-gap: 72px;
 }
@@ -639,6 +641,8 @@ section {
 .customers-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+
   gap: 72px 16px;
 }
 
@@ -684,7 +688,7 @@ section {
 }
 
 .customer-icon {
-  fill: currentColor;
+  fill: currentColor;team-list
 }
 
 @media only screen and (max-width: 767px) {
@@ -703,20 +707,47 @@ section {
 
 /* ? FOOTER SECTION */
 .footer-container {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 
   background-color: var(--secondary-bg);
 }
 
+@media only screen and (min-width: 1158px) {
+  .footer-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
 .footer-wrap {
-  display: flex;
-  align-items: baseline;
   gap: 72px 24px;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding-left: 108px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-wrap {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 .footer-logo-container {
-  margin-right: 120px;
+  margin:  0;
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-logo-container {
+    margin-right: 120px;
+  }
 }
 
 .footer-logo {
@@ -754,6 +785,7 @@ section {
   align-items: center;
   gap: 16px;
 }
+
 
 .footer-socials-link {
   width: 40px;
@@ -794,7 +826,24 @@ section {
 /* *FOOTER SUBSCRIBE FORM */
 .footer-sub-wrapper {
   display: block;
-  margin-left: 80px;
+  margin-left: 0;
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-sub-wrapper {
+    margin-left: 80px;
+  }
+}
+
+.footer-sub-title {
+  margin-bottom: 16px;
+
+  color: var(--tertiary-text);
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .footer-form {
@@ -826,17 +875,6 @@ section {
 
 .footer-sub-input::placeholder {
   color: #ffffff;
-}
-
-.footer-sub-title {
-  margin-bottom: 16px;
-
-  color: var(--tertiary-text);
-
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 
 .footer-sub-btn {
@@ -871,7 +909,6 @@ section {
   pointer-events: none;
   fill: currentColor;
   color: #ffffff;
-
 }
 
 /* ! PORTFOLIO */
@@ -1038,7 +1075,7 @@ section {
   background: var(--modal-backdrop-bg-color);
 
   transition: opacity var(--animation-hover-focus-fast),
-  visibility var(--animation-hover-focus-fast);
+    visibility var(--animation-hover-focus-fast);
 }
 
 .is-hidden {
