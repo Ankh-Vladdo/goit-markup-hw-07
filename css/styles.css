@@ -889,7 +889,7 @@ section {
 }
 
 .footer-sub-input {
-  width: 398px;
+  width: 264px;
   height: 40px;
   padding: 8px 16px;
   margin-bottom: 16px;
@@ -910,9 +910,14 @@ section {
   letter-spacing: 0.04em;
 }
 
+@media only screen and (max-width: 427px) {
+  .footer-sub-input {
+    width: 398px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .footer-sub-input {
-    width: 264px;
     margin-right: 24px;
   }
 }
