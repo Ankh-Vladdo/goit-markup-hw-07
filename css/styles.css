@@ -506,7 +506,6 @@ section {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   column-gap: 24px;
   row-gap: 72px;
 }
@@ -530,6 +529,8 @@ section {
       (100% - var(--indent-vertical) * (var(--items-two) - 1)) / var
         (--items-two)
     );
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
