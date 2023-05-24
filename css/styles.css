@@ -137,9 +137,6 @@ p {
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
-
-  outline: 2px solid greenyellow;
-  outline-offset: -2px;
 }
 
 section {
@@ -168,22 +165,28 @@ section {
   }
 }
 
-/*? HEADER SECTION  */
+/*! HEADER SECTION  */
+
+.page-header {
+  width: 100%;
+  border-bottom: 1px solid var(--border-portfolio);
+  box-shadow: var(--header-nav-box-shadow);
+}
+
 .header-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.page-header {
-  border-bottom: 1px solid var(--border-portfolio);
-}
-
-/* ? LOGO */
+/* ? HEADER LOGO */
 .header-logo {
-  margin-right: 76px;
+  margin-right: 249px;
+  padding-top: 24px;
+  padding-bottom: 22px;
 
   color: var(--primary-accent);
+
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -192,37 +195,37 @@ section {
   text-transform: uppercase;
 }
 
+@media only screen and (min-width: 768px) {
+  .header-logo {
+    margin-right: 120px;
+    padding-bottom: 24px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .header-logo {
+    margin-right: 76px;
+  }
+}
+
 .logo-right {
   color: var(--secondary-text);
 }
 
 /* ? HEADER NAV */
-.header-nav-link::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  bottom: -1px;
-}
-
-.header-nav-link.active::after {
-  background-color: #404bbf;
-}
-
-.header-nav-link.active {
-  color: #404bbf;
-}
-
-.header-nav-list {
+.header-nav {
   display: flex;
   align-items: center;
 }
 
-.header-nav {
+@media only screen and (max-width: 767px) {
+  .header-nav {
+    display: none;
+  }
+}
+
+
+.header-nav-list {
   display: flex;
   align-items: center;
 }
@@ -248,16 +251,31 @@ section {
   text-decoration: none;
 }
 
+.header-nav-link::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  bottom: -1px;
+}
+
+.header-nav-link.active::after {
+  background-color: #404bbf;
+}
+
+.header-nav-link.active {
+  color: #404bbf;
+}
+
 .link:hover,
 .link:focus {
   color: var(--secondary-accent);
 }
 
-.page-header {
-  width: 100%;
-  border-bottom: 1px solid var(--border-portfolio);
-  box-shadow: var(--header-nav-box-shadow);
-}
 
 /* ? HEADER CONTACTS  */
 .header-contacts {
@@ -266,13 +284,19 @@ section {
   margin-left: auto;
 }
 
-.header-contacts-item:not(:last-child) {
-  margin-right: 40px;
-}
-
 .header-contacts:hover,
 .header-contacts:focus {
   color: var(--secondary-accent);
+}
+
+@media only screen and (max-width: 767px) {
+  .header-contacts {
+    display: none;
+  }
+}
+
+.header-contacts-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .header-contacts-link {
@@ -286,6 +310,8 @@ section {
   font-size: 16px;
   line-height: 1.5;
 }
+
+/* ! MAIN SECTION */
 
 /* ? HERO SECTION */
 .hero {
@@ -659,6 +685,12 @@ section {
   background-color: var(--primary-bg);
 }
 
+@media only screen and (max-width: 427px) {
+  .customers-item {
+    width: 152px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .customers-item {
     flex-basis: calc((100% - 48px) / 3);
@@ -741,14 +773,6 @@ section {
   }
 }
 
-@media only screen and (min-width: 428px) {
-  .footer-logo-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   .footer-logo-container {
     margin: 0;
@@ -774,9 +798,18 @@ section {
   text-transform: uppercase;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 428px) {
   .footer-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-logo {
+    margin-bottom: 16px;
   }
 }
 
@@ -1119,7 +1152,6 @@ section {
 }
 
 /* ?MODAL WINDOW  */
-
 .backdrop {
   width: 100%;
   height: 100vh;
@@ -1204,7 +1236,6 @@ section {
 }
 
 /* * MODAL FORM */
-
 .modal-title {
   display: block;
   margin-bottom: 16px;
@@ -1221,18 +1252,6 @@ section {
 .form-wrapper {
   position: relative;
   margin-bottom: 8px;
-}
-
-.form-icon {
-  transform: translateY(-50%);
-  transition: var(--animation-hover-focus-fast);
-
-  position: absolute;
-  top: 50%;
-  left: 16px;
-
-  pointer-events: none;
-  fill: currentColor;
 }
 
 .form-field {
@@ -1255,6 +1274,17 @@ section {
 
 .form-field:focus + .form-icon {
   fill: #4d5ae5;
+}
+.form-icon {
+  transform: translateY(-50%);
+  transition: var(--animation-hover-focus-fast);
+
+  position: absolute;
+  top: 50%;
+  left: 16px;
+
+  pointer-events: none;
+  fill: currentColor;
 }
 
 .form-comment-label,
