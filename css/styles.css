@@ -1481,13 +1481,23 @@ section {
   row-gap: 40px;
 }
 
-
-
-
 .mobile-nav-link {
-  display: block;
-
   color: #2e2f42;
+}
+
+.mobile-contacts-link {
+  width: 353px;
+  height: 40px;
+
+  margin-top: 284px;
+  margin-bottom: 64px;
+
+  color: #4d5ae5;
+}
+
+.mobile-nav-link,
+.mobile-contacts-link {
+  display: block;
 
   font-weight: 700;
   font-size: 36px;
@@ -1495,8 +1505,45 @@ section {
   letter-spacing: 0.02em;
 }
 
-/* .mobile-contacts {
+.mobile-contacts-mail {
+  display: block;
+  margin-bottom: 48px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  color: #434455;
 }
 
 .mobile-social {
-} */
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 56px;
+}
+
+.mobile-socials-link {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--social-icons-bg);
+  color: var(--social-icons);
+  border-radius: 50%;
+
+  transition: background-color var(--animation-hover-focus-fast);
+}
+
+.mobile-socials-link:hover,
+.mobile-socials-link:focus {
+  background-color: var(--secondary-accent);
+  color: var(--social-icons);
+}
+
+.mobile-social-icon {
+  fill: currentColor;
+}
