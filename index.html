@@ -20,13 +20,34 @@
 
 <body class="body">
   <!-- ! HEADER SECTION -->
-  <!-- <header class="page-header">
-    <div class="container header-flex"> -->
-  <!-- ? HEADER NAV -->
-  <!-- <nav class="header-nav">
-        <a class="header-logo link" href="./index.html" target="_blank" rel="noopener no-referrer">Web<span
-            class="logo-right">Studio</span>
-        </a>
+  <header class="page-header">
+    <div class="container header-flex">
+      <!-- ? HEADER LOGO -->
+      <a class="header-logo link" href="./index.html" target="_blank" rel="noopener no-referrer">Web<span
+          class="logo-right">Studio</span>
+      </a>
+      <!-- ?MOBILE MENU -->
+      <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+            <!-- ? HEADER NAV -->
+      <nav class="header-nav">
         <ul class="header-nav-list list">
           <li class="header-nav-item item">
             <a class="header-nav-link link active" href="./index.html" target="_blank"
@@ -40,9 +61,9 @@
             <a class="header-nav-link link" href="" target="_blank" rel="noopener no-referrer">Contacts</a>
           </li>
         </ul>
-      </nav> -->
-  <!-- ? HEADER CONTACTS -->
-  <!-- <address class="header-contacts">
+      </nav>
+      <!-- ? HEADER CONTACTS -->
+      <address class="header-contacts">
         <ul class="header-contacts list">
           <li class="header-contacts-item">
             <a class="header-contacts-link link" href="mailto:info@devstudio.com" target="_blank"
@@ -55,7 +76,7 @@
         </ul>
       </address>
     </div>
-  </header> -->
+  </header>
   <!-- ! MAIN SECTION -->
   <main>
     <!-- ? HERO SECTION -->
@@ -438,13 +459,14 @@
     </div>
   </footer>
   <!-- ?MODAL WINDOW -->
-  <!-- <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="modal-close-btn button" type="button" data-modal-close>
         <svg class="modal-close-icon" width="8" height="8">
           <use href="./images/icons.svg#close-icon"></use>
         </svg>
       </button>
+      <!-- * MODAL FORM  -->
       <strong class="modal-title">
         Leave your contacts and we will call you back
       </strong>
@@ -485,7 +507,7 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
-  <script src="./js/mobile-menu.js"></script> -->
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
