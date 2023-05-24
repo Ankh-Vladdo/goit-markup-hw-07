@@ -1464,7 +1464,7 @@ section {
   border-radius: 50%;
   background-color: #e7e9fc;
   border: 1px solid #2e2f42;
-  color: #2E2F42;
+  color: #2e2f42;
 }
 
 .menu-close-icon {
@@ -1474,18 +1474,29 @@ section {
 .mobile-menu {
   padding: 0;
   margin: 0;
-  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 40px;
 }
 
-.mobile-menu .link {
+
+
+
+.mobile-nav-link {
   display: block;
-  padding: 10px;
+
   color: #2e2f42;
-  text-decoration: none;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
 }
 
-.mobile-contacts {
+/* .mobile-contacts {
 }
 
 .mobile-social {
-}
+} */
