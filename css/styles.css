@@ -216,6 +216,10 @@ section {
   min-width: 40px;
   min-height: 40px;
 
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
   margin: 0;
   margin-left: auto;
   padding: 0;
@@ -1447,13 +1451,13 @@ section {
   transform: translateX(0);
 }
 
-.menu-container .menu-toggle {
+.menu-container .menu-toggle-button {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 24px;
+  right: 24px;
 }
 
-.menu-toggle .button {
+.menu-toggle-button {
   width: 24px;
   height: 24px;
 
