@@ -310,14 +310,21 @@ section {
 }
 
 /* ? HEADER CONTACTS  */
-.header-contacts {
+.header-contacts-list {
   display: flex;
   font-style: normal;
   margin-left: auto;
 }
 
-.header-contacts:hover,
-.header-contacts:focus {
+@media only screen and (min-width: 768px) {
+  .header-contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
   color: var(--secondary-accent);
 }
 
@@ -334,13 +341,27 @@ section {
 .header-contacts-link {
   padding-top: 24px;
   padding-bottom: 24px;
+  margin-left: 122px;
 
   color: var(--primary-text);
-
   transition: color var(--animation-hover-focus-fast);
 
   font-size: 16px;
   line-height: 1.5;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-contacts-link {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    color: #434455;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
 }
 
 /* ! MAIN SECTION */
