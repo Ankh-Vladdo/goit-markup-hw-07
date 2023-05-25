@@ -382,11 +382,25 @@ section {
   background-color: var(--secondary-bg);
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(var(--bg-gradient), var(--bg-gradient)),
+      url(../images/main_pages/hero/dark-bg_856_mob@2x_result.jpg);
+  }
+}
+
 @media only screen and (min-width: 429px) {
   .hero {
     background-image: linear-gradient(var(--bg-gradient), var(--bg-gradient)),
       url(../images/main_pages/hero/dark-bg_768_tablet@1x_result.jpg);
   }
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(var(--bg-gradient), var(--bg-gradient)),
+      url(../images/main_pages/hero/dark-bg_1536_tablet@2x_result.jpg);
+  }
+}
 }
 
 @media only screen and (min-width: 769px) {
@@ -394,6 +408,15 @@ section {
     background-image: linear-gradient(var(--bg-gradient), var(--bg-gradient)),
       url(../images/main_pages/hero/people-office\ 1_1440_desktop@1x_result.jpg);
   }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(var(--bg-gradient), var(--bg-gradient)),
+      url(../images/main_pages/hero/people-office\ 1_2880_desktop@2x_result.jpg);
+  }
+}
+
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -1482,7 +1505,7 @@ section {
   transform: translateX(100%);
   transition: var(--animation-hover-focus-fast);
 }
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 768px) {
   .menu-container{
     display: none;
   }
