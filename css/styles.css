@@ -1482,11 +1482,11 @@ section {
   transition: var(--animation-hover-focus-fast);
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .menu-container{
     display: none;
   }
-}
+} */
 
 .menu-container.is-open {
   transform: translateX(0);
