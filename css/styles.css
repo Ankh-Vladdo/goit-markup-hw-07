@@ -368,13 +368,14 @@ section {
 
 /* ? HERO SECTION */
 .hero {
-  width: 428px;
+  max-width: 1440px;
   margin: auto;
   padding-top: 112px;
   padding-bottom: 112px;
 
   background-image: linear-gradient(var(--bg-gradient), var(--bg-gradient)),
     url(../images/main_pages/hero/dark-bg_428_mob@1x_result.jpg);
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1481,12 +1482,11 @@ section {
   transform: translateX(100%);
   transition: var(--animation-hover-focus-fast);
 }
-
-/* @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .menu-container{
     display: none;
   }
-} */
+}
 
 .menu-container.is-open {
   transform: translateX(0);
