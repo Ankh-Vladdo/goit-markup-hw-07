@@ -213,10 +213,6 @@ section {
   min-width: 40px;
   min-height: 40px;
 
-  position: absolute;
-  top: 16px;
-  right: 16px;
-
   margin: 0;
   margin-left: auto;
   padding: 0;
@@ -738,7 +734,6 @@ section {
 
 /* ? CUSTOMERS SECTION */
 .customers-container {
-  width: 396px;
   padding: 0;
 }
 
@@ -860,11 +855,12 @@ section {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    padding: 0 96px;
+
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-wrap {
+    width: 584px;
     gap: 72px 24px;
   }
 }
@@ -1552,10 +1548,6 @@ section {
   gap: 40px;
 }
 
-.mobile-contacts-item {
-  margin-bottom: 48px;
-}
-
 .mobile-nav-link {
   color: var(--secondary-text);
 }
@@ -1571,16 +1563,21 @@ section {
   display: block;
 
   font-weight: 700;
-  font-size: 25px;
+  font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
 }
 
-@media only screen and (min-width: 428px) {
+@media only screen and (min-width: 427px) {
   .mobile-contacts-link {
-    font-size: 35px;
+    font-size: 25px;
   }
 }
+
+.mobile-contacts {
+  margin-bottom: 48px;
+}
+
 
 .mobile-contacts-mail {
   display: block;
@@ -1596,13 +1593,6 @@ section {
 .mobile-social {
   display: flex;
   gap: 56px;
-  margin-bottom: 40px;
-}
-
-@media only screen and (max-width: 427px) {
-  .mobile-social {
-    gap: 20px;
-  }
 }
 
 .mobile-socials-link {
