@@ -1574,14 +1574,14 @@ section {
   display: block;
 
   font-weight: 700;
-  font-size: 36px;
+  font-size: 25px;
   line-height: 1.11;
   letter-spacing: 0.02em;
 }
 
-@media only screen and (max-width: 428px) {
+@media only screen and (min-width: 428px) {
   mobile-contacts-link {
-    font-size: 25px;
+    font-size: 36px;
   }
 }
 
