@@ -337,6 +337,12 @@ section {
   }
 }
 
+@media only screen and (min-width: 1158px) {
+  .header-contacts {
+    margin-left: auto;
+  }
+}
+
 .header-contacts-item:not(:last-child) {
   margin-right: 40px;
 }
@@ -854,13 +860,19 @@ section {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px){
   .footer-wrap {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .footer-wrap {
+    gap: 72px 24px;
+  }
+}
+
 
 @media only screen and (min-width: 1158px) {
   .footer-wrap {
@@ -868,12 +880,6 @@ section {
     padding-left: 15px;
   }
 }
-
-/* @media only screen and (min-width: 768px) {
-  .footer-logo-container {
-    margin: 0;
-  }
-} */
 
 @media only screen and (min-width: 1158px) {
   .footer-logo-container {
