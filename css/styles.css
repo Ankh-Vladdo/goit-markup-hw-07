@@ -1494,6 +1494,8 @@ section {
 /* ?MOBILE MENU */
 .menu-container {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   top: 0;
   left: 0;
 
@@ -1546,7 +1548,7 @@ section {
 
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
+  gap: 40px;
 }
 
 .mobile-nav-link {
@@ -1592,8 +1594,7 @@ section {
 
 .mobile-social {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 56px;
+  gap: 56px;
 }
 
 @media only screen and (max-width: 427px) {
