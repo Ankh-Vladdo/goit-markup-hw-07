@@ -1542,10 +1542,8 @@ section {
 
 .mobile-menu {
   margin-bottom: auto;
-
   display: flex;
   flex-direction: column;
-  gap: 40px;
 }
 
 .mobile-nav-link {
@@ -1578,6 +1576,9 @@ section {
   margin-bottom: 48px;
 }
 
+.mobile-nav-item:not(:last-child) {
+  margin-bottom: 40px;
+}
 
 .mobile-contacts-mail {
   display: block;
