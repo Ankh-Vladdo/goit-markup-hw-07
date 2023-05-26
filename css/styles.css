@@ -118,7 +118,7 @@ p {
   overflow: hidden;
 }
 
-.body {
+body {
   background-color: var(--primary-bg);
   color: var(--primary-text);
   font-family: "Roboto", sans-serif;
@@ -168,15 +168,12 @@ section {
 /*! HEADER SECTION  */
 
 .page-header {
-  width: 100%;
   border-bottom: 1px solid var(--border-portfolio);
-  box-shadow: var(--header-nav-box-shadow);
 }
 
 .header-flex {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 /* ? HEADER LOGO */
@@ -334,6 +331,12 @@ section {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .header-contacts {
+    margin-left: 122px;
+  }
+}
+
 .header-contacts-item:not(:last-child) {
   margin-right: 40px;
 }
@@ -341,7 +344,6 @@ section {
 .header-contacts-link {
   padding-top: 24px;
   padding-bottom: 24px;
-  margin-left: 122px;
 
   color: var(--primary-text);
   transition: color var(--animation-hover-focus-fast);
@@ -368,8 +370,7 @@ section {
 
 /* ? HERO SECTION */
 .hero {
-  max-width: 1440px;
-  margin: auto;
+  margin: 0 auto;
   padding-top: 112px;
   padding-bottom: 112px;
 
@@ -457,15 +458,15 @@ section {
   .hero-title {
     max-width: 496px;
     margin-bottom: 36px;
+
+    font-size: 56px;
+    line-height: 1.07;
   }
 }
 
 @media only screen and (min-width: 1158px) {
   .hero-title {
     margin-bottom: 48px;
-
-    font-size: 56px;
-    line-height: 1.07;
   }
 }
 
@@ -538,6 +539,12 @@ section {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .subtitle-about {
+    text-align: start;
+  }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -847,16 +854,11 @@ section {
   }
 }
 
-.footer-wrap {
-  gap: 72px 24px;
-}
-
 @media only screen and (min-width: 768px) {
   .footer-wrap {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    padding-left: 108px;
   }
 }
 
@@ -864,15 +866,14 @@ section {
   .footer-wrap {
     flex-wrap: nowrap;
     padding-left: 15px;
-    width: 1440px;
   }
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .footer-logo-container {
     margin: 0;
   }
-}
+} */
 
 @media only screen and (min-width: 1158px) {
   .footer-logo-container {
@@ -893,7 +894,7 @@ section {
   text-transform: uppercase;
 }
 
-@media only screen and (min-width: 428px) {
+@media only screen and (min-width: 428px) and (max-width: 767px) {
   .footer-logo {
     display: flex;
     flex-wrap: wrap;
