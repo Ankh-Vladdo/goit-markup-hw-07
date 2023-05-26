@@ -1552,9 +1552,6 @@ section {
   gap: 40px;
 }
 
-.mobile-contacts {
-  margin-bottom: 48px;
-}
 .mobile-contacts-item {
   margin-bottom: 48px;
 }
@@ -1564,7 +1561,7 @@ section {
 }
 
 .mobile-nav-link-studio,
-.mobile-contacts-link{
+.mobile-contacts-link {
   color: var(--primary-accent);
 }
 
@@ -1581,7 +1578,7 @@ section {
 
 @media only screen and (min-width: 428px) {
   .mobile-contacts-link {
-    font-size: 36px;
+    font-size: 35px;
   }
 }
 
