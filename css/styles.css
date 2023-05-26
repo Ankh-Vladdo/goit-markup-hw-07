@@ -1574,7 +1574,7 @@ section {
 
 @media only screen and (max-width: 427px) {
   mobile-contacts-link{
-    font-size: 25px;
+  font-size: 25px;
   }
 }
 
@@ -1594,6 +1594,12 @@ section {
   display: flex;
   flex-wrap: wrap;
   column-gap: 56px;
+}
+
+@media only screen and (max-width: 427px) {
+.mobile-social {
+gap: 20px;
+}
 }
 
 .mobile-socials-link {
