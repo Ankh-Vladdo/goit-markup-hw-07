@@ -301,11 +301,6 @@ section {
   color: #404bbf;
 }
 
-.link:hover,
-.link:focus {
-  color: var(--secondary-accent);
-}
-
 /* ? HEADER CONTACTS  */
 .header-contacts-list {
   display: flex;
@@ -872,7 +867,6 @@ section {
     gap: 72px 24px;
   }
 }
-
 
 @media only screen and (min-width: 1158px) {
   .footer-wrap {
@@ -1540,6 +1534,7 @@ section {
   background-color: #e7e9fc;
   border: 1px solid #2e2f42;
   color: #2e2f42;
+  cursor: pointer;
 }
 
 .menu-close-icon {
@@ -1547,37 +1542,40 @@ section {
 }
 
 .mobile-menu {
-  padding: 0;
-  margin: 0;
+  margin-bottom: auto;
 
   display: flex;
   flex-direction: column;
-
   row-gap: 40px;
 }
 
 .mobile-nav-link {
-  color: #2e2f42;
+  color: var(--secondary-text);
+}
+
+.mobile-nav-link-studio {
+  color: var(--primary-accent);
 }
 
 .mobile-contacts-link {
-  width: 353px;
-  height: 40px;
-
-  margin-top: 284px;
-  margin-bottom: 64px;
-
-  color: #4d5ae5;
+  color: var(--primary-accent);
 }
 
 .mobile-nav-link,
-.mobile-contacts-link {
+.mobile-contacts-link,
+.mobile-nav-link-studio {
   display: block;
 
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
+}
+
+@media only screen and (max-width: 427px) {
+  mobile-contacts-link{
+    font-size: 25px;
+  }
 }
 
 .mobile-contacts-mail {
