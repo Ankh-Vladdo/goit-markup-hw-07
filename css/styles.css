@@ -1566,7 +1566,7 @@ section {
   letter-spacing: 0.02em;
 }
 
-@media only screen and (min-width: 427px) {
+@media only screen and (max-width: 427px) {
   .mobile-contacts-link {
     font-size: 25px;
   }
