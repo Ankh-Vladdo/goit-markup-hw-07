@@ -1551,6 +1551,13 @@ section {
   gap: 40px;
 }
 
+.mobile-contacts{
+  margin-bottom: 48px;
+}
+.mobile-contacts-item{
+  margin-bottom: 48px
+}
+
 .mobile-nav-link {
   color: var(--secondary-text);
 }
@@ -1574,7 +1581,7 @@ section {
   letter-spacing: 0.02em;
 }
 
-@media only screen and (max-width: 427px) {
+@media only screen and (max-width: 428px) {
   mobile-contacts-link{
   font-size: 25px;
   }
@@ -1582,7 +1589,6 @@ section {
 
 .mobile-contacts-mail {
   display: block;
-  margin-bottom: 48px;
 
   font-weight: 500;
   font-size: 20px;
@@ -1595,6 +1601,7 @@ section {
 .mobile-social {
   display: flex;
   gap: 56px;
+  margin-bottom: 40px;
 }
 
 @media only screen and (max-width: 427px) {
