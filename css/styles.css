@@ -1369,11 +1369,11 @@ overflow-y: scroll;
   letter-spacing: 0.02em;
 }
 
-/* @media only screen and (max-width: 427px) {
+ @media only screen and (max-width: 427px) {
   .modal-title {
-    font-size: 15.6px;
+    font-size: 12px;
   }
-} */
+} 
 
 .form-wrapper {
   position: relative;
