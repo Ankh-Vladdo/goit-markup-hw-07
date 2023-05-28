@@ -1279,6 +1279,8 @@ section {
 
   transition: opacity var(--animation-hover-focus-fast),
     visibility var(--animation-hover-focus-fast);
+
+overflow-y: scroll;
 }
 
 .is-hidden {
@@ -1309,6 +1311,12 @@ section {
   border-radius: var(--modal-border-radius);
 
   transition: transform var(--animation-hover-focus-fast);
+}
+
+@media only screen and (max-width: 427px) {
+  .modal {
+    width: 95%;
+  }
 }
 
 .modal-close-btn {
@@ -1360,6 +1368,12 @@ section {
   text-align: center;
   letter-spacing: 0.02em;
 }
+
+/* @media only screen and (max-width: 427px) {
+  .modal-title {
+    font-size: 15.6px;
+  }
+} */
 
 .form-wrapper {
   position: relative;
@@ -1454,6 +1468,12 @@ section {
   letter-spacing: 0.04em;
   user-select: none;
 }
+
+/* @media only screen and (max-width: 427px) {
+  .form-agreement-text {
+    font-size: 10px;
+  }
+} */
 
 .form-check-input {
   width: 16px;
@@ -1586,11 +1606,11 @@ section {
   letter-spacing: 0.02em;
 }
 
-/* @media only screen and (max-width: 427px) {
+@media only screen and (max-width: 427px) {
   .mobile-contacts-link {
     font-size: 25px;
   }
-} */
+}
 
 .mobile-contacts {
   margin-bottom: 48px;
@@ -1614,6 +1634,12 @@ section {
 .mobile-social {
   display: flex;
   gap: 56px;
+}
+
+@media only screen and (max-width: 427px) {
+  .mobile-social {
+    gap: 20px;
+  }
 }
 
 .mobile-socials-link {
