@@ -855,7 +855,6 @@ section {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
@@ -1025,15 +1024,15 @@ section {
 
 @media only screen and (max-width: 767px) {
   .footer-sub-label {
-  margin: 0 auto;
-}
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .footer-sub-label {
     margin-bottom: 16px;
     margin-right: 24px;
-    }
+  }
 }
 
 .footer-sub-input {
@@ -1139,7 +1138,7 @@ section {
 }
 
 @media only screen and (min-width: 1158px) {
-  .filter-list  {
+  .filter-list {
     margin-bottom: 72px;
   }
 }
@@ -1176,6 +1175,10 @@ section {
 }
 
 /* ? PROJECT CARDS */
+.project-container {
+  margin: 0 auto;
+}
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -1201,34 +1204,19 @@ section {
 
 @media only screen and (min-width: 768px) {
   .project-item {
-    flex-basis: calc((100%-24) / 2);
+    flex-basis: 356px;
   }
 }
 
 @media only screen and (min-width: 1158px) {
   .project-item {
-    flex-basis: calc((100%-48) / 3);
+    flex-basis: 360px;
   }
-}
-
-/*
-.project-item {
-  margin-right: 24px;
-  margin-bottom: 48px;
-}
-
-
-.project-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.project-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
 
 .project-item:hover {
   box-shadow: var(--card-portfolio-hover-box-shadow);
-} */
+}
 
 .project-link {
   transition: box-shadow var(--animation-hover-focus-fast);
@@ -1246,6 +1234,11 @@ section {
   position: relative;
   overflow: hidden;
 }
+
+.project-img {
+  margin: 0;
+}
+
 .project-overlay-text {
   width: 100%;
   height: 100%;
@@ -1318,7 +1311,7 @@ section {
   transition: opacity var(--animation-hover-focus-fast),
     visibility var(--animation-hover-focus-fast);
 
-overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 .is-hidden {
