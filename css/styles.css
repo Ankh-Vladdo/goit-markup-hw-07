@@ -1116,9 +1116,21 @@ section {
 
 /* ! PORTFOLIO */
 .project {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
 }
+
+@media only screen and (min-width: 768px) {
+  .project {
+    padding-top: 56px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .project {
+    padding-top: 100px;
+  }
+}
+
 
 /* ? MENU FILTER BUTTON */
 .filter-list {
@@ -1233,10 +1245,6 @@ section {
 .project-thumb {
   position: relative;
   overflow: hidden;
-}
-
-.project-img {
-  margin: 0;
 }
 
 .project-overlay-text {
